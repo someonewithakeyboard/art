@@ -1,0 +1,74 @@
+.flextagline {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 10vw;
+}
+
+.righteous {
+  font-family: 'Righteous', cursive;
+}
+
+.flexleft {
+    padding-top: 6vw;
+    flex: 50%;
+    align-items: center;
+}
+
+.flexright {
+    flex: 50%;
+    align-items: center;
+}
+
+.gridtype {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  text-align: center;
+}
+
+#aSide model-viewer {
+  height: 30rem;
+  width: 50rem;
+}
+
+
+.acloserlook {
+  display: flex;
+  justify-content: center;
+}
+
+
+.grid {
+  display: grid;
+  margin-top: 2em;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: repeat(auto-fit, minmax(100px, 1fr));
+  justify-content: center;
+  align-items: center;
+  padding-left: 20%;
+  padding-right: 10%;
+  row-gap: 50px;
+}
+
+.image {
+  width: 500px;
+  max-width: 100%;
+  min-width: 50%;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  .flexright, .flexleft {
+    flex: 100%;
+  }
+
+  #aSide model-viewer {
+    height: 25rem;
+    width: 25rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

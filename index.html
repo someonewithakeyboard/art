@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Righteous&display=swap');
+  </style> 
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark righteous">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link disabled"
+            >Disabled</a
+          >
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="flextagline">
+
+    <div class="flexleft" style="font-family: 'Righteous', cursive; font-size: 150%;">
+      <h1>Tagline</h1>
+    </div>
+
+    <div id="aSide" class="flexright">
+      <model-viewer bounds="tight" enable-pan src="Fantabulous Kasi(1).glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1" camera-orbit="45.09deg 82.76deg auto" auto-rotate>
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            View in your space
+        </button>
+        <div id="ar-prompt">
+            <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+        </div>
+    </model-viewer>
+           
+    </div>
+
+  </div>
+  
+  <div>
+    <h1 style="word-wrap: break-word; margin: 5vw; font-family: 'Righteous', cursive;"> Art theory can be quite boring, considering the subject is supposed to be a colourful and imaginiative subject, and while theory is important, it ends up being boring. Our group has decided to make an incentive to do amazing theory work, and to outperform their peers.</h1>
+  </div>
+
+  <div>
+    <h1 style="word-wrap: break-word; margin: 5vw; font-family: 'Righteous', cursive;">Our point system gives rewards to superb work and top-notch behaviour within the classroom, and at the end of the year, students have the oppotunity to sell it off for 3D-printed prizes that they can paint, to remember Art throughout their time at Cecil Hills High School</h1>
+  </div>
+
+<div class="acloserlook" style="font-family: 'Righteous', cursive; font-size: 1.5rem; margin: 5vw;">
+  <h1">A look at some of the prizes:</h1>
+</div>
+
+<div>
+  <div class="grid flex-wrap">
+      <h2 style="width: auto; height: auto; font-family: 'Righteous', cursive; font-size: 2.5vw;" class="mobile">These 3D prints can be painted, so you can go all out with the colours</h2>
+        <img src="poster.png" class="rounded image" alt="Sphinx">			
+      <h2 style="width: auto; height: auto; font-family: 'Righteous', cursive; font-size: 2.5vw;" class="mobile">These 3D prints have a ring, so you can hang it up on a keychain</h2>	
+        <img src="poster(1).png" class="rounded image" alt="Great Pyramid's of Giza"> 
+      <h2 style="width: auto; font-family: 'Righteous', cursive; font-size: 2.5vw;" class="mobile">They're easy to print, meaning that you can make them on a whim</h2>
+        <img src="poster(2).png" class="rounded image" alt="Skateboard">	
+  </div>
+</div>
+
+
+
+</body>
+</html>
