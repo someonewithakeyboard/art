@@ -18,6 +18,7 @@
 
 .flexright {
     flex: 50%;
+    align-items: center;
     width: 100%;
 }
 
@@ -78,7 +79,7 @@
 
   #aSide model-viewer {
     height: 25rem;
-    width: 2rem;
+    width: auto;
   }
 
   .grid {
@@ -92,6 +93,10 @@
   .gridpointsystem {
     flex: 100%;
     margin-left: 5%;
+  }
+
+  .title {
+    margin-top: 8vw
   }
 }
 
@@ -116,4 +121,8 @@
   row-gap: 50px;
   padding-left: 10%;
   padding-right: 10%;
+}
+
+.title {
+  margin-top: 5%;
 }
