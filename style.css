@@ -126,3 +126,10 @@
 .title {
   margin-top: 5%;
 }
+
+.flexrightlook {
+  padding-top: 6vw;
+  flex: 50%;
+  align-items: center;
+  width: 100%;
+}
