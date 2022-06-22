@@ -18,7 +18,7 @@
 
 .flexright {
     flex: 50%;
-    align-items: center;
+    width: 100%;
 }
 
 .gridtype {
@@ -30,6 +30,11 @@
 #aSide model-viewer {
   height: 30rem;
   width: 50rem;
+}
+
+#aSide {
+  height:fit-content;
+  width: auto;
 }
 
 
@@ -46,7 +51,7 @@
   grid-auto-rows: repeat(auto-fit, minmax(100px, 1fr));
   justify-content: center;
   align-items: center;
-  padding-left: 20%;
+  padding-left: 15%;
   padding-right: 10%;
   row-gap: 50px;
 }
@@ -58,6 +63,14 @@
   height: auto;
 }
 
+
+.mobile {
+  width: auto; 
+  height: auto; 
+  font-family: 'Righteous', cursive; 
+  font-size: 2rem;
+}
+
 @media (max-width: 800px) {
   .flexright, .flexleft {
     flex: 100%;
@@ -65,10 +78,42 @@
 
   #aSide model-viewer {
     height: 25rem;
-    width: 25rem;
+    width: 2rem;
   }
 
   .grid {
     grid-template-columns: 1fr;
   }
+
+  .mobile {
+    font-size: 1.5
+  }
+
+  .gridpointsystem {
+    flex: 100%;
+    margin-left: 5%;
+  }
+}
+
+.moretext {
+  display: flex;
+  font-family: 'Righteous', cursive; 
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+}
+
+.gridpointsystem {
+  display: grid;
+  font-family: 'Righteous', cursive;
+  font-size: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: repeat(auto-fit, minmax(100px, 1fr));
+  justify-items: center;
+  align-items: center;
+  flex: 5%;
+  row-gap: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
